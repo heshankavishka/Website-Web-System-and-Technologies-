@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Hezsen Clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Hezsen.png" alt="Hezsen Logo"> 
+        </div>
+        <nav>
+            <ul>
+
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop">
+        <h1>Our Shop</h1>
+        <div class="product-grid">\
+
+            <div class="product-card">
+                <img src="tshirt.jpeg" alt="T-shirt">
+                <h3>T-shirt</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="trouser.jpeg" alt="Trouser">
+                <h3>Trouser</h3>
+                <p>$35.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="frock.jpeg" alt="Frocks">
+                <h3>Frocks</h3>
+                <p>$45.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="shop-form" onsubmit="return validateForm()">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="nic">NIC Number:</label>
+                <input type="text" id="nic" name="nic">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hezsen Clothing. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

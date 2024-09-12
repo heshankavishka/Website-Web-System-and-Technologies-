@@ -1,0 +1,759 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #120656;
+    background-image: url('webbac.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+  }
+  
+  header {
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 5px 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .logo {
+    flex-shrink: 0; 
+  }
+  
+  .logo img {
+    max-width: 150px; 
+    height: auto; 
+  }
+  
+  nav {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto; 
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px; 
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px; 
+  }
+  
+  nav ul li a:hover {
+    background-color: #840a0a;
+  }
+  
+  .hero {
+    background-image: url('clothes.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(218, 209, 209);
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .hero-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .hero-btn:hover {
+    background-color: #010000;
+  }
+  
+  .featured-products {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    border: 4px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .product-card img {
+    width: 100%;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+  }
+  
+  .product-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .product-card button:hover {
+    background-color: #45a049;
+  }
+  
+  .testimonials {
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .newsletter {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .newsletter h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    margin-top: 20px;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .newsletter input[type="submit"] {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .newsletter input[type="submit"]:hover {
+    background-color: #ff4500;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    flex-shrink: 0;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #771010;
+    border-radius: 5px;
+  }
+  
+  nav ul li a.active {
+    background-color: #ff6347;
+    border-radius: 5px;
+  }
+  
+  .about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-us h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  nav ul li a.active {
+    background-color: #ff6347;
+    border-radius: 5px;
+  }
+  
+  .shop {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .shop h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 18px;
+    color: #ff6347;
+  }
+  
+  .product-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .product-card button:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #ff4500;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  nav ul li a.active {
+    background-color: #ff6347;
+    border-radius: 5px;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .contact h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact textarea {
+    resize: vertical;
+  }
+  
+  .contact input[type="submit"] {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact input[type="submit"]:hover {
+    background-color: #ff4500;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #6a0404;
+    background-color: #8d4040;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  nav ul li a.active {
+    background-color: #ff6347;
+    border-radius: 5px;
+  }
+  
+  .signup {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .signup h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .signup p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .signup form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup form div {
+    margin-bottom: 15px;
+  }
+  
+  .signup label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .signup input[type="text"],
+  .signup input[type="email"],
+  .signup input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signup button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .signup button:hover {
+    background-color: #ff4500;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+
+
+  
+

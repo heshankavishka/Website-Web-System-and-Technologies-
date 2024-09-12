@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="Hezsen.png" alt="Logo"> 
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html" class="active">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="signup">
+    <div class="signup-content">
+      <h1>Signup</h1>
+      <p>Please fill out the form below to create an account.</p>
+      <form id="signupForm">
+        <div>
+          <label for="username">User Name:</label>
+          <input type="text" id="username" name="username">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+        <div>
+          <label for="nic">NIC Number:</label>
+          <input type="text" id="nic" name="nic">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
